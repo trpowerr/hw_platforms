@@ -4,7 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/trpowerr/hw_platforms/issues"
   },
-  "homepage": "https://github.com/trpowerr/hw_platforms#readme"
+  "homepage": "https://github.com/trpowerr/hw_platforms#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
 }
